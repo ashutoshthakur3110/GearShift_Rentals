@@ -83,8 +83,9 @@ These files together handle the **UI design, user interaction, booking logic, an
 
 ---
 
-⬇️ How to Download Project
-Option 1: Download ZIP
+### ⬇️ How to Download Project
+
+### Option 1: Download ZIP
 
 Go to GitHub repository
 
@@ -96,19 +97,19 @@ Extract files
 
 ---
 
-Option 2: Clone Repository
+### Option 2: Clone Repository
 
 git clone https://github.com/ashutoshthakur3110/GearShift_Rentals.git
 
 ---
 
-▶️ How to Run Project
+### ▶️ How to Run Project
 
-Frontend
+### Frontend
 
 Open index.html in browser
 
-Backend
+### Backend
 
 cd backend
 
@@ -116,9 +117,9 @@ nodemon index.js
 
 ---
 
-👨‍💻 Developer
+### 👨‍💻 Developer
 
-Ashutosh Thakur
+### Ashutosh Thakur
 
 📧 Email: ashutoshthakur626@gmail.com
 

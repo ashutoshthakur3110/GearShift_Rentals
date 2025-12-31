@@ -33,8 +33,6 @@ GearShift Rentals simplifies car rentals by offering an easy booking interface, 
 
 ---
 
-## 📂 Project Structure
-
 ## 📂 Project Files Structure
 
 Below are the main files used in the **GearShift Rentals** project:

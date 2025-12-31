@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eeeded
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    column-gap: 220px;
+}
+
+.nav .item {
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav .btn {
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+.nav .btn input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3a6fff;
+    
+}
+
+.nav .btn .login {
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #3a6fff;
+    background-color: #3a6fff;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav .item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+    
+.nav .item .home-btn {
+    color: #3a6fff;
+    font-weight: 700;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form a {
+    position: relative;
+    left: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  form a:hover {
+    background-color: #555;
+  }
+
+  .foot-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #f5f5f5;
+    font-size: small;
+}
+
+.foot-sec .item{
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+.foot-sec .item a{
+    text-decoration: none;
+    color: black;
+}

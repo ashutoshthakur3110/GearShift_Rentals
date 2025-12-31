@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<header>
+    <nav class="nav">
+        <div class="logo">
+            <h1>GearShift Rentals</h1>
+        </div>
+
+        <div class="item">
+            <a class="home-btn" href="/index.html">Home</a>
+            <a href="./viewall.html">Rent Car</a>
+            <a href="/contact.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <main>
+        <h2>Book Now</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="pickup-date">Pickup Date:</label>
+          <input type="date" id="pickup-date" name="pickup-date" required>
+
+          <label for="return-date">Return Date:</label>
+          <input type="date" id="return-date" name="return-date" required>
+
+          <label for="car-type">Car Type:</label>
+          <select id="car-type" name="car-type" required>
+            <option value="">Select Car Type</option>
+            <option value="thar">Mahindra Thar</option>
+            <option value="800">Maruti Suzuki 800</option>
+            <option value="creta">Hyundai Creta</option>
+            <option value="endaevour">Ford Endaevour</option>
+            <option value="mercedez">Mercedez Benz</option>
+            <option value="bmw">BMW X5</option>
+            <option value="mushtang">Mushtang GT</option>
+            <option value="scorpio">Mahindra Scorpio</option>
+            <option value="dzire">Swift Dzire</option>
+          </select>
+
+          <button type="submit">Book Now</button>
+        </form>
+    </main>
+    <script src="./book.js"></script>
+</body>
+<footer class="foot-sec">
+    <div class="logo">
+        <h1>GearShift Rentals</h1>
+    </div>
+
+    <div class="copy">
+        <p>Copyright &copy; 2024 Design By Developers</p>
+    </div>
+
+    <div class="item">
+        <a href="/contact.html">Contact Us</a>
+    </div>
+</footer>
+</html>

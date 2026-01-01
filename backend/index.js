@@ -98,6 +98,6 @@ app.post('/book', async (req, res) => {
     }
 });
 
-app.listen(port,()=>{
-    console.log(`listning in ${port} number`);
+app.listen(process.env.PORT || 3500 ,()=>{
+    console.log(`server running`);
 })

@@ -1,14 +1,11 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv')
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const cors = require('cors');
 const app = express();
 const port = 3500;
-
-dotenv.config();
 
 const customerSchema = mongoose.Schema({
     name: String,
@@ -18,7 +15,7 @@ const customerSchema = mongoose.Schema({
 
 const Customer = mongoose.model('customer1',customerSchema);
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect('mongodb://127.0.0.1:27017/Gearshift-Rentals')
   .then(()=>console.log("DB connected"))
   .catch(err=>console.log("DB error",err))
 
@@ -98,6 +95,6 @@ app.post('/book', async (req, res) => {
     }
 });
 
-app.listen(process.env.PORT || 3500 ,()=>{
-    console.log(`server running`);
+app.listen(port,()=>{
+    console.log(`listning in ${port} number`);
 })

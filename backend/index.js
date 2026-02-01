@@ -6,6 +6,14 @@ const mongodb = require('mongodb');
 const cors = require('cors');
 const app = express();
 const port = 3500;
+const dotenv = require("dotenv");
+dotenv.config();
+
+
+mongoose.connect(process.env.MONGO_URL)
+  .then(()=>console.log("DB connected"))
+  .catch(err=>console.log("DB error",err))
+
 
 const customerSchema = mongoose.Schema({
     name: String,
@@ -14,10 +22,6 @@ const customerSchema = mongoose.Schema({
 });
 
 const Customer = mongoose.model('customer1',customerSchema);
-
-mongoose.connect('mongodb://127.0.0.1:27017/Gearshift-Rentals')
-  .then(()=>console.log("DB connected"))
-  .catch(err=>console.log("DB error",err))
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -94,6 +98,16 @@ app.post('/book', async (req, res) => {
         return res.status(500).json({ message: "Server error" });
     }
 });
+
+app.get("/getdata",async(req,res)=>{
+    try{
+        const data = await Booking.find({});
+        res.json(data);
+    }catch(err)
+    {
+        console.log("Error fetching data : "+err);
+    }
+})
 
 app.listen(port,()=>{
     console.log(`listning in ${port} number`);

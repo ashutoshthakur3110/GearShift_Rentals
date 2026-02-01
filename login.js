@@ -41,7 +41,7 @@ form.onsubmit = (e)=>{
   }
 
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    fetch("http://localhost:3500/login", {
+    fetch("https://gearshift-rentals-1.onrender.com/login", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({

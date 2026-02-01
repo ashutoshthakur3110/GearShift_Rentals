@@ -42,7 +42,7 @@ const form = document.querySelector("form");
     }
 
     try {
-      const res = await fetch("http://localhost:3500/book", {
+      const res = await fetch("https://gearshift-rentals-1.onrender.com/book", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, pickupDate, returnDate, carType })

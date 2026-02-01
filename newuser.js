@@ -45,7 +45,7 @@ form.addEventListener("submit", (e) => {
 
   if (hasError) return;
 
-  fetch("http://localhost:3500/register", {
+  fetch("https://gearshift-rentals-1.onrender.com/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
